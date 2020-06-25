@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #454548;
+  background-color: #eaf9f8;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 600px;
+}
+input {
+  outline: 0;
+  cursor: pointer;
+}
+h1 {
+  text-transform: capitalize;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
+}
+ul {
+  margin-top: 50px;
+}
+li {
+  border-radius: 5px;
+  margin-bottom: 25px !important;
+}
+strong {
+  padding-right: 3px;
+}
+.rm {
+  background: #bbb9b9;
+  border-radius: 30%;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+  border-color: lightgray;
+}
+.done {
+  text-decoration: line-through;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #949496;
+  border-color: #949496 transparent #949496 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
